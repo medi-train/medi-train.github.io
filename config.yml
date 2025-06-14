@@ -57,12 +57,9 @@ params:
           title: Medical Education and Planning Through Virtual Reality
           subtitle: "The use of extended reality (XR) in medical education and surgical procedure planning brings significant changes to medical practice. Advanced XR systems enable the creation of interactive and realistic simulations, facilitating preparation for complex surgeries and providing additional information during the procedures themselves. Despite rapid technological development, challenges remain related to data availability, generation of synthetic cases, and standardization of education. This project focuses on developing new methods and systems to enhance medical education and surgical planning for specific conditions and procedures. The goal is to develop innovative methods for education, simulation, and analysis of medical images using machine learning algorithms that will (1) increase doctors' experience regarding placenta accreta and the importance of its examination during pregnancy, thereby reducing the rate of missed cases of placenta accreta detection during ultrasound examination, and (2) increase the ease of execution and quality of cerebrovascular procedures by creating detailed and realistic VR/XR simulations of specific neurosurgical procedures. The methods for synthetic generation of medical images w ill enable the creation of diverse educational cases, w hile VR/XR simulations w ill provide medical professionals the opportunity to improve their skills in a safe environment."
           imageUrl: "logo.png"
-          imageWidth: 160
+          imageWidth: 700
           imageHeight: 160
           imageUrl: "hrzz_logo_eng.png"
-          imageWidth: 160
-          imageHeight: 160
-          imageUrl: "ferit.png"
           imageWidth: 160
           imageHeight: 160
           buttons:
