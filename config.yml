@@ -1,5 +1,5 @@
 baseURL: "https://pascalmichaillat.org/hugo-website/" 
-title: Moritz-Maria von Igelfeld
+title: MediTrain
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -29,10 +29,10 @@ menu:
           weight: 6
 
 params:
-    description: "This website hosts Moritz-Maria von Igelfeld's research papers, books, course materials, data, curriculum vitae, and contact information."
-    author: Moritz-Maria von Igelfeld
+    description: "This website hosts information about HRZZ project MEDITRAIN. "
+    author: Marija Habijan
     # googleAnalyticsID: "G-XXXXX"
-    DateFormat: "January 2006"
+    DateFormat: "June 2025"
     defaultTheme: light
     hideFooter: false
     disableThemeToggle: true
@@ -54,50 +54,31 @@ params:
     math: true
     profileMode:
           enabled: true
-          title: Professor Dr von Igelfeld
-          subtitle: "I am a Professor in the Institute of Romance Philology at the University of Regensburg, Germany. My research focuses on Portuguese irregular verbs. I was a doctoral student of Professor Dr Dieter Vogelsang in Munich, and later a second assistant of Professor Walter Schoeffler-Henschell at the University of Wiesbaden."
-          imageUrl: "picture.jpeg"
+          title: MEDITRAIN - Medical Education and Planning Through Virtual Reality
+          subtitle: "The use of extended reality (XR) in medical education and surgical procedure planning brings significant changes to medical practice. Advanced XR systems enable the creation of interactive and realistic simulations, facilitating preparation for complex surgeries and providing additional information during the procedures themselves. Despite rapid technological development, challenges remain related to data availability, generation of synthetic cases, and standardization of education. This project focuses on developing new methods and systems to enhance medical education and surgical planning for specific conditions and procedures. The goal is to develop innovative methods for education, simulation, and analysis of medical images using machine learning algorithms that will (1) increase doctors' experience regarding placenta accreta and the importance of its examination during pregnancy, thereby reducing the rate of missed cases of placenta accreta detection during ultrasound examination, and (2) increase the ease of execution and quality of cerebrovascular procedures by creating detailed and realistic VR/XR simulations of specific neurosurgical procedures. The methods for synthetic generation of medical images w ill enable the creation of diverse educational cases, w hile VR/XR simulations w ill provide medical professionals the opportunity to improve their skills in a safe environment."
+          imageUrl: "logo.png"
           imageWidth: 160
           imageHeight: 160
           buttons:
+            - name: About
+              url: about
             - name: Papers
               url: papers/
             - name: Data
               url: data/
-            - name: Books
-              url: books/
-            - name: Courses
-              url: courses/
-            - name: Tags
-              url: tags/
-            - name: Archive
-              url: archive/
-            - name: Blog
-              url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
+            - name: Disemination
+              url: disemination/
+
 
     socialIcons:
-        - name: CV
-          url: cv.pdf
         - name: Email
-          url: mailto:igelfeld@regensburg.edu
-        - name: Zoom
-          url: https://www.zoom.us/my/igelfeld
-        - name: Location
-          url: location/
-        - name: Office Hours
-          url: officehours/
-        - name: Google Scholar
-          url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
+          url: mailto:meditrain2025@gmail.com
         - name: GitHub
-          url: https://github.com/pmichaillat
-        - name: Substack
+          url: https://github.com/medi-train
+        - name: ResearchGate
           url: https://pmichaillat.substack.com
-        - name: YouTube
-          url: https://www.youtube.com/@pmichaillat
-        - name: Twitter
-          url: https://x.com/pmichaillat
-        - name: Bluesky
-          url: https://bsky.app/profile/pmichaillat.bsky.social
+        - name: FERIT
+          url: https://www.ferit.unios.hr/ 
 
     assets:
         disableScrollBarStyle: true
@@ -105,7 +86,7 @@ params:
         hiddenInList: false
         hiddenInSingle: true
     label:
-      text: "Moritz-Maria von Igelfeld"
+      text: "MediTrain"
       icon: favicon.ico
       iconHeight: 18
 
