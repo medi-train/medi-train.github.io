@@ -1,7 +1,7 @@
 ---
 title: "Advancing Medical Education and Planning Through Extended Reality: A Mini Review of XR Applications in Medicine" 
 date: 2025-04-22
-tags: ["medical education","virtual realit","history of oil","Mediterranean world"]
+tags: ["medical education","virtual reality","personalized medicine","medical planing and education"]
 author: ["Irena Galić","Marija Habijan","Marin Benčević","Juraj Perić","Hrvoje Leventić","Krešimir Romić","Ivana Hartmann Tolić","Robert Šojo","Aleksandra Pižurica","Danilo Babin","Dario Mužević","Vjekoslav Kopačin","Maja Košuta Petrović","Mirta Vujnovac"]
 description: "This paper reviews XR applications in medicine. Published as Mostart 2025 Conference Paper, Springer, 2025." 
 summary: "The integration of extended reality (XR) technologies, virtual, augmented, and mixed reality with artificial intelligence (AI) is transforming medical education, diagnostics, and surgical planning." 
