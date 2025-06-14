@@ -1,17 +1,17 @@
 ---
-title: "Unusual Uses For Olive Oil" 
-date: 2013-01-15
-tags: ["philology","oleic science","history of oil","Mediterranean world"]
-author: ["Detlev Amadeus Unterholzer","Moritz-Maria von Igelfeld"]
-description: "This paper reviews unusual uses for olive oil throughout the Mediterranean world. Published in the Journal of Oleic Science, 2013." 
-summary: "This paper reviews unusual uses for olive oil throughout the Mediterranean world. It highlights in particular the challengs arising from excessive or unorthodox consumption of olive oil." 
+title: "Advancing Medical Education and Planning Through Extended Reality: A Mini Review of XR Applications in Medicine" 
+date: 2025-04-22
+tags: ["medical education","virtual realit","history of oil","Mediterranean world"]
+author: ["Irena Galić","Marija Habijan","Marin Benčević","Juraj Perić","Hrvoje Leventić","Krešimir Romić","Ivana Hartmann Tolić","Robert Šojo","Aleksandra Pižurica","Danilo Babin","Dario Mužević","Vjekoslav Kopačin","Maja Košuta Petrović","Mirta Vujnovac"]
+description: "This paper reviews XR applications in medicine. Published as Mostart 2025 Conference Paper, Springer, 2025." 
+summary: "The integration of extended reality (XR) technologies, virtual, augmented, and mixed reality with artificial intelligence (AI) is transforming medical education, diagnostics, and surgical planning." 
 cover:
     image: "paper1.png"
-    alt: "Some Uses For Olive Oil"
+    alt: "XR Applications in Medicine"
     relative: true
 editPost:
-    URL: "https://github.com/pmichaillat/hugo-website"
-    Text: "Journal of Oleic Science"
+    URL: "https://github.com/medi-train"
+    Text: "Medi Train"
 
 ---
 
@@ -20,42 +20,36 @@ editPost:
 ##### Download
 
 + [Paper](paper1.pdf)
-+ [Online appendix](appendix1.pdf)
-+ [Code and data](https://github.com/pmichaillat/feru)
+
+
 
 ---
 
 ##### Abstract
 
-This paper reviews unusual uses for olive oil throughout the Mediterranean world. It highlights in particular the challengs arising from excessive or unorthodox consumption of olive oil. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The integration of extended reality (XR) technologies, virtual, augmented, and mixed reality with artificial intelligence (AI) is transforming medical education, diagnostics, and surgical planning. This mini review explores how established AI methods such as convolutional neural networks (CNNs), recurrent networks (RNNs), generative adversarial networks (GANs), and reinforcement learning (RL) are being used to enhance XR systems for anatomical segmentation, realistic simulation, and autonomous interaction. It also examines emerging approaches, including diffusion models (DMs), vision transformers (ViTs), and multi-modal learning (MML), which enable high-fidelity synthetic data generation, contextual scene understanding, and integration of heterogeneous inputs such as imaging, text, and sensor data. Through use cases in placenta accreta diagnosis and neurovascular intervention planning, we demonstrate how AI-enhanced XR systems can deliver immersive, intelligent, and personalized experiences for clinicians and trainees. We further outline technical challenges, including real-time performance, data variability, and interpretability, and discuss strategies to ensure safe, equitable, and effective adoption of AI-driven XR in healthcare.
 
 ---
 
-##### Figure 6: Some Uses For Olive Oil
+##### Figure 1: Established and Emerging Methods for Medical XR
 
 ![](paper1.png)
 
 ---
 
 ##### Citation
+author: ["Irena Galić","Marija Habijan","Marin Benčević","Juraj Perić","Hrvoje Leventić","Krešimir Romić","Ivana Hartmann Tolić","Robert Šojo","Aleksandra Pižurica","Danilo Babin","Dario Mužević","Vjekoslav Kopačin","Maja Košuta Petrović","Mirta Vujnovac"]
 
-Unterholzer, Detlev A., and  Moritz-Maria von Igelfeld. 2013. "Unusual Uses For Olive Oil." *Journal of Oleic Science* 34 (1): 449–489. http://www.alexandermccallsmith.com/book/unusual-uses-for-olive-oil.
 
 ```BibTeX
-@article{UI13,
-author = {Detlev A. Unterholzer and Moritz-Maria von Igelfeld},
-year = {2013},
-title ={Unusual Uses For Olive Oil},
-journal = {Journal of Oleic Science},
-volume = {34},
-number = {1},
-pages = {449--489},
-url = {http://www.alexandermccallsmith.com/book/unusual-uses-for-olive-oil}}
+@article{galic,
+author = {Galić I., Habijan M., Benčević M., Perić J., Leventić H., Romić K., Tolić Hartman I., Šojo R., Pižurica A., Babin D., Mužević D., Kopačin V., Petrović Košuta M., Vujnovac M.},
+year = {2025},
+title ={Advancing Medical Education and Planning Through Extended Reality: A Mini Review of XR Applications in Medicine},
+journal = {International Conference on Digital Transformation in Education and Artificial Intelligence Applications, Mostart 2025}
+}
 ```
 
 ---
 
-##### Related material
 
-+ [Presentation slides](presentation1.pdf)
-+ [Summary of the paper](https://www.penguinrandomhouse.com/books/110403/unusual-uses-for-olive-oil-by-alexander-mccall-smith/)

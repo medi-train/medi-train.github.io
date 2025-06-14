@@ -66,12 +66,15 @@ params:
           buttons:
             - name: About
               url: about
+            - name: Team
+              url: team/
             - name: Papers
               url: papers/
             - name: Data
               url: data/
             - name: Disemination
               url: disemination/
+
 
 
     socialIcons:
