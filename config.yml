@@ -60,8 +60,6 @@ params:
           imageWidth: 700
           imageHeight: 160
           imageUrl: "hrzz_logo_eng.png"
-          imageWidth: 160
-          imageHeight: 160
           buttons:
             - name: About
               url: about
