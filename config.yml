@@ -59,7 +59,9 @@ params:
             The use of extended reality (XR) in medical education and surgical procedure planning brings significant changes to medical practice. Advanced XR systems enable the creation of interactive and realistic simulations, facilitating preparation for complex surgeries and providing additional information during the procedures themselves. Despite rapid technological development, challenges remain related to data availability, generation of synthetic cases, and standardization of education. <br><br>
             This project focuses on developing new methods and systems to enhance medical education and surgical planning using AI and XR. <br><br>
 
-            The goal is to develop innovative methods for education, simulation, and analysis of medical images using machine learning algorithms that will (1) increase doctors' experience regarding placenta accreta and the importance of its examination during pregnancy, thereby reducing the rate of missed cases of placenta accreta detection during ultrasound examination, and (2) increase the ease of execution and quality of cerebrovascular procedures by creating detailed and realistic VR/XR simulations of specific neurosurgical procedures. 
+            The goal is to develop innovative methods for education, simulation, and analysis of medical images using machine learning algorithms that will (1) increase doctors' experience regarding placenta accreta and the importance of its examination during pregnancy, thereby reducing the rate of missed cases of placenta accreta detection during ultrasound examination, and (2) increase the ease of execution and quality of cerebrovascular procedures by creating detailed and realistic VR/XR simulations of specific neurosurgical procedures.  <br><br>
+
+            This work was supported by the <a href = "https://hrzz.hr/en/">Croatian Science Foundation</a> under the project number IP-2024-05-9492.
           imageUrl: "logo.png"
           imageWidth: 160
           imageHeight: 160
