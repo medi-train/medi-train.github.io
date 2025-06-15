@@ -15,13 +15,6 @@ editPost:
 
 ---
 
----
-
-##### Download
-
-+ [Presentation](mostart2025_presentation.pdf)
-
----
 
 ##### Abstract
 
