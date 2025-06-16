@@ -19,7 +19,15 @@ disableAnchoredHeadings: false
 
 #### Team Members
 
-The MEDITRAIN project brings together a multidisciplinary team of experts in medical imaging, virtual reality, and clinical medicine. The project is led by Prof. dr. sc. Irena Galić (FERIT Osijek), who oversees the entire project and contributes to algorithm development, supervision, and dissemination. Key collaborators include Prof. dr. ir. Aleksandra Pižurica and Dr. Danilo Babin from Ghent University, experts in image segmentation and synthetic data generation. The FERIT team includes doc. dr. sc. Hrvoje Leventić, doc. dr. sc. Krešimir Romić, dr. sc. Ivana Hartmann-Tolić, dr. sc. Marija Habijan, and junior researchers Marin Benčević and Robert Šojo, who lead the development of simulation frameworks, neural network models, and synthetic medical image datasets. Clinicians Dr. Dario Mužević, Dr. Maja Košuta Petrović, and Dr. Vjekoslav Kopačin from KBC Osijek provide essential clinical validation, evaluation of the developed systems, and expert feedback. Together, the team ensures the successful translation of AI-driven XR systems into meaningful clinical applications.
+The MEDITRAIN project brings together a multidisciplinary team of experts in medical imaging, virtual reality, and clinical medicine. 
+
+The project is led by Prof. dr. sc. Irena Galić (FERIT Osijek), who oversees the entire project and contributes to algorithm development, supervision, and dissemination. Key collaborators include Prof. dr. ir. Aleksandra Pižurica and Dr. Danilo Babin from Ghent University, experts in image segmentation and synthetic data generation. 
+
+The FERIT team includes doc. dr. sc. Hrvoje Leventić, doc. dr. sc. Krešimir Romić, dr. sc. Ivana Hartmann-Tolić, dr. sc. Marija Habijan, and junior researchers Marin Benčević and Robert Šojo, who lead the development of simulation frameworks, neural network models, and synthetic medical image datasets. 
+
+Clinicians Dr. Dario Mužević, Dr. Maja Košuta Petrović, and Dr. Vjekoslav Kopačin from KBC Osijek provide essential clinical validation, evaluation of the developed systems, and expert feedback. 
+
+Together, the team ensures the successful translation of AI-driven XR systems into meaningful clinical applications.
 
 
 <table>
