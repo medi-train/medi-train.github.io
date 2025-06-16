@@ -63,8 +63,8 @@ params:
 
             This work was supported by the Croatian Science Foundation under the project number IP-2024-05-9492.
           imageUrl: "logo.png"
-          imageWidth: 160
-          imageHeight: 160
+          imageWidth: 140
+          imageHeight: 140
           buttons:
             - name: About
               url: about
