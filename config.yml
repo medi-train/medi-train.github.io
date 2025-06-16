@@ -63,9 +63,9 @@ params:
 
             This work was supported by the Croatian Science Foundation under the project number IP-2024-05-9492.
           <div class="profile-images">
-            <img src="logo.png" width="100" height="100" alt="meditrain">
-            <img src="ferit.png" width="100" height="100" alt="ferit">
-            <img src="hrzz_logo_eng.png" width="100" height="100" alt="hrzz">
+            <img src="static/logo.png" width="100" height="100" alt="meditrain">
+            <img src="static/ferit.png" width="100" height="100" alt="ferit">
+            <img src="static/hrzz_logo_eng.png" width="100" height="100" alt="hrzz">
           </div>
 
           buttons:
