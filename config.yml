@@ -62,12 +62,12 @@ params:
             The goal is to develop innovative methods for education, simulation, and analysis of medical images using machine learning algorithms that will (1) increase doctors' experience regarding placenta accreta and the importance of its examination during pregnancy, thereby reducing the rate of missed cases of placenta accreta detection during ultrasound examination, and (2) increase the ease of execution and quality of cerebrovascular procedures by creating detailed and realistic VR/XR simulations of specific neurosurgical procedures.  <br><br>
 
             This work was supported by the Croatian Science Foundation under the project number IP-2024-05-9492.
-          imageUrl: "logo.png"
-          imageWidth: 140
-          imageHeight: 140
+          <img src="logo.png" width="140" style="margin-right:10px;">
+          <img src="ferit.png" width="140" style="margin-right:10px;">
+          <img src="hrzz_logo_eng.png" width="140"><br><br>
           buttons:
             - name: About
-              url: about
+              url: about/
             - name: Team
               url: team/
             - name: Papers
