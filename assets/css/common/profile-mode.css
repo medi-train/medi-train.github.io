@@ -22,6 +22,18 @@
     font-size: 2.5rem;
 }
 
+.profile-images {
+    display: flex;           
+    gap: 15px;              
+    align-items: center;     
+    margin-bottom: 20px;     
+}
+
+.profile-images img {
+    border-radius: 8px;      
+    border: 1px solid var(--tertiary);  
+    object-fit: contain;
+}
 .profile img {
     border-radius: 50%;
     border: 1px solid var(--tertiary);

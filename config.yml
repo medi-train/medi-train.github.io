@@ -65,6 +65,12 @@ params:
           imageUrl: "logo.png"
           imageWidth: 140
           imageHeight: 140
+          imageUrl: "ferit.png"
+          imageWidth: 140
+          imageHeight: 140
+          imageUrl: "hrzz_logo_eng.png"
+          imageWidth: 140
+          imageHeight: 140
           buttons:
             - name: About
               url: about/
