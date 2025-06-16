@@ -2,6 +2,7 @@ baseURL: "https://medi-train.github.io/"
 title: MediTrain
 theme: PaperMod
 
+
 enableInlineShortcodes: true
 enableRobotsTXT: true
 pagination:
@@ -9,6 +10,11 @@ pagination:
 
 taxonomies:
     tag: tags
+
+params:
+  assets:
+    customCSS: ["css/extra.css"]
+
 
 menu:
     main:
