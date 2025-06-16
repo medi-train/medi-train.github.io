@@ -80,8 +80,8 @@ params:
               url: papers/
             - name: Data
               url: data/
-            - name: Disemination
-              url: disemination/
+            - name: Dissemination
+              url: dissemination/
 
 
 
