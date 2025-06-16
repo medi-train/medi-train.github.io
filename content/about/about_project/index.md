@@ -1,12 +1,12 @@
 ---
-title: "About us: The MEDITRAIN Team" 
+title: "About MEDITRAIN project" 
 date: 2025-02-04
 tags: ["meditrain","hrzz","ferit"]
 author: ["Marija Habijan"]
 description: "Medical Education and Planning Through Virtual Reality."
 summary: "Medical Education and Planning Through Virtual Reality."
 cover:
-    image: "team.jpg"
+    image: "meditrain_project.png"
     alt: "MEDITRAIN team"
     relative: true
 editPost:
