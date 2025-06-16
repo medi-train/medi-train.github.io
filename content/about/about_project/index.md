@@ -22,7 +22,7 @@ disableAnchoredHeadings: false
 
 ---
 
-The Faculty of Electrical Engineering, Computer Science and Information Technology (FERIT), Osijek, Croatia implements the research project funded by the Croatian Science Foundation, titled *Medical Education and Planning through Extended Reality (MEDITRAIN)*. 
+The Faculty of Electrical Engineering, Computer Science and Information Technology (FERIT), Osijek, Croatia implements the research project funded by the Croatian Science Foundation, titled *Medical Education and Planning through Extended Reality (MEDITRAIN)* under the project number IP-2024-05-9492. 
 
 
 **Project Overview:**
