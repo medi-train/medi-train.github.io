@@ -6,7 +6,7 @@ author: ["Marija Habijan"]
 description: "Medical Education and Planning Through Virtual Reality."
 summary: "Medical Education and Planning Through Virtual Reality."
 cover:
-    image: "team.png"
+    image: "team.jpg"
     alt: "MEDITRAIN team"
     relative: true
 editPost:
