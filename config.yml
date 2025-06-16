@@ -12,20 +12,20 @@ taxonomies:
 
 menu:
     main:
-        - name: Books
-          url: books/
+        - name: About
+          url: about/
           weight: 5 
+        - name: Team
+          url: team/
+          weight: 2
         - name: Papers
           url: papers/
-          weight: 2
-        - name: Courses
-          url: courses/
           weight: 3
         - name: Data
           url: data/
           weight: 4 
-        - name: Blog
-          url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
+        - name: Dissemination
+          url: dissemination/
           weight: 6
 
 params:
@@ -44,7 +44,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["books","courses","papers","data"]
+    MainSections: ["about","team","papers","data","dissemination"]
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
