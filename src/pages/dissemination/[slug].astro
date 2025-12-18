@@ -1,0 +1,273 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const disseminationItems = await getCollection('dissemination');
+  return disseminationItems.map((item) => ({
+    params: { slug: item.slug },
+    props: { item },
+  }));
+}
+
+const { item } = Astro.props;
+const { Content } = await item.render();
+
+const eventTypeLabels = {
+  conference: 'Conference',
+  workshop: 'Workshop',
+  presentation: 'Presentation',
+  keynote: 'Keynote',
+  poster: 'Poster',
+  seminar: 'Seminar',
+  webinar: 'Webinar',
+  other: 'Event'
+};
+---
+
+<BaseLayout
+  title={`${item.data.title} - MediTrain`}
+  description={item.data.description}
+>
+  <article class="max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-16">
+    <!-- Breadcrumb Navigation -->
+    <nav class="mb-6 sm:mb-8 text-white/70">
+      <ol class="flex items-center gap-2 text-xs sm:text-sm overflow-x-auto">
+        <li class="whitespace-nowrap">
+          <a href="/dissemination" class="hover:text-yellow transition-colors">Dissemination</a>
+        </li>
+        <li class="flex-shrink-0">
+          <svg class="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </li>
+        <li class="text-white truncate">
+          {item.data.title}
+        </li>
+      </ol>
+    </nav>
+
+    <!-- Event Header -->
+    <header class="mb-8 sm:mb-12">
+      <div class="flex items-center gap-3 mb-3 sm:mb-4">
+        <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-yellow/20 text-yellow text-xs sm:text-sm font-semibold rounded-full border border-yellow/30">
+          {eventTypeLabels[item.data.eventType]}
+        </span>
+      </div>
+
+      <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6">
+        {item.data.title}
+      </h1>
+
+      <div class="flex flex-wrap items-center gap-3 sm:gap-6 text-sm sm:text-base text-white/80 mb-4 sm:mb-6">
+        <div class="flex items-center gap-2">
+          <svg class="w-4 h-4 sm:w-5 sm:h-5 text-yellow flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+          <time datetime={item.data.eventDate.toISOString()}>
+            {item.data.eventDate.toLocaleDateString('en-US', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric'
+            })}
+          </time>
+        </div>
+
+        {item.data.location && (
+          <div class="flex items-center gap-2">
+            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-yellow flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+            <span class="break-words">{item.data.location}</span>
+          </div>
+        )}
+
+        {item.data.organization && (
+          <div class="flex items-center gap-2">
+            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-yellow flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+            <span class="break-words">{item.data.organization}</span>
+          </div>
+        )}
+      </div>
+
+      <div class="flex flex-wrap items-start gap-2 text-xs sm:text-sm text-white/70 mb-6 sm:mb-8">
+        <svg class="w-4 h-4 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+        </svg>
+        <span class="break-words">{item.data.presenters.join(', ')}</span>
+      </div>
+
+      <!-- Download Links -->
+      {(item.data.posterUrl || item.data.slidesUrl || item.data.videoUrl) && (
+        <div class="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
+          {item.data.posterUrl && (
+            <a
+              href={item.data.posterUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-yellow text-dark text-sm sm:text-base font-semibold rounded-full hover:bg-yellow-light transition-colors"
+            >
+              <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+              </svg>
+              Download Poster
+            </a>
+          )}
+
+          {item.data.slidesUrl && (
+            <a
+              href={item.data.slidesUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-white/10 backdrop-blur-sm text-white text-sm sm:text-base font-semibold rounded-full hover:bg-white/20 transition-colors border border-white/20"
+            >
+              <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+              </svg>
+              Download Slides
+            </a>
+          )}
+
+          {item.data.videoUrl && (
+            <a
+              href={item.data.videoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-white/10 backdrop-blur-sm text-white text-sm sm:text-base font-semibold rounded-full hover:bg-white/20 transition-colors border border-white/20"
+            >
+              <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              Watch Video
+            </a>
+          )}
+        </div>
+      )}
+    </header>
+
+    <!-- Event Image -->
+    {item.data.image && (
+      <div class="mb-8 sm:mb-12 rounded-xl sm:rounded-2xl overflow-hidden border border-white/10">
+        <img
+          src={item.data.image}
+          alt={item.data.title}
+          class="w-full"
+        />
+      </div>
+    )}
+
+    <!-- Event Content -->
+    <div class="prose prose-invert prose-sm sm:prose-base md:prose-lg max-w-none mb-8 sm:mb-12">
+      <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8">
+        <Content />
+      </div>
+    </div>
+
+    <!-- Tags -->
+    {item.data.tags && item.data.tags.length > 0 && (
+      <section class="mb-8 sm:mb-12">
+        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6">Topics</h2>
+        <div class="flex flex-wrap gap-2 sm:gap-3">
+          {item.data.tags.map((tag) => (
+            <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-yellow/20 text-yellow text-xs sm:text-sm font-semibold rounded-full border border-yellow/30">
+              {tag}
+            </span>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- Back to Dissemination -->
+    <div class="pt-6 sm:pt-8 border-t border-white/10">
+      <a
+        href="/dissemination"
+        class="inline-flex items-center gap-2 text-white hover:text-yellow transition-colors text-sm sm:text-base font-semibold"
+      >
+        <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+        </svg>
+        Back to Dissemination
+      </a>
+    </div>
+  </article>
+</BaseLayout>
+
+<style is:global>
+  .prose {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .prose h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 1.875rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .prose h3 {
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .prose p {
+    margin-bottom: 1.25rem;
+    line-height: 1.75;
+  }
+
+  .prose a {
+    color: #F9D71C;
+    text-decoration: underline;
+  }
+
+  .prose a:hover {
+    opacity: 0.8;
+  }
+
+  .prose strong {
+    color: white;
+    font-weight: 600;
+  }
+
+  .prose ul, .prose ol {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  .prose li {
+    margin-bottom: 0.5rem;
+  }
+
+  .prose img {
+    border-radius: 1rem;
+    margin: 2rem 0;
+  }
+
+  .prose code {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.375rem;
+    font-size: 0.875em;
+  }
+
+  .prose pre {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+  }
+
+  .prose pre code {
+    background-color: transparent;
+    padding: 0;
+  }
+</style>

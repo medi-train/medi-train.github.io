@@ -1,0 +1,143 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const projectLeader = { 
+  name: "Prof. Irena Galić, PhD", 
+  team: "FERIT Osijek", 
+  img: "/images/team/irena-galic.jpg",
+  link: "https://www.ferit.unios.hr/fakultet/imenik-djelatnika#irena-galic"
+};
+
+const feritTeam = [
+  { name: "Asst. Prof. Hrvoje Leventić, PhD", team: "FERIT Osijek", img: "/images/team/hrvoje-leventic.jpg", link: "https://www.ferit.unios.hr/fakultet/imenik-djelatnika#hrvoje-leventic" },
+  { name: "Asst. Prof. Krešimir Romić, PhD", team: "FERIT Osijek", img: "/images/team/kresimir-romic.jpg", link: "https://www.ferit.unios.hr/fakultet/imenik-djelatnika#kresimir-romic" },
+  { name: "Asst. Prof. Ivana Hartmann Tolić, PhD", team: "FERIT Osijek", img: "/images/team/ivana-hartmann-tolic.jpg", link: "https://www.ferit.unios.hr/fakultet/imenik-djelatnika#ivana-hartmann-tolic" },
+  { name: "Marija Habijan, PhD", team: "FERIT Osijek", img: "/images/team/marija-habijan.jpg", link: "https://www.ferit.unios.hr/fakultet/imenik-djelatnika#marija-habijan" },
+  { name: "Marin Benčević, PhD", team: "FERIT Osijek", img: "/images/team/marin-bencevic.jpg", link: "https://www.ferit.unios.hr/fakultet/imenik-djelatnika#marin-bencevic" },
+  { name: "Robert Šojo, mag. ing. comp.", team: "FERIT Osijek", img: "/images/team/robert-sojo.jpg", link: "https://www.ferit.unios.hr/fakultet/imenik-djelatnika#robert-sojo" },
+  { name: "Juraj Perić, mag. ing. comp.", team: "FERIT Osijek", img: "/images/team/default.png", link: "https://www.ferit.unios.hr/fakultet/imenik-djelatnika#juraj-peric" },
+];
+
+const ghentTeam = [
+  { name: "Prof. Aleksandra Pižurica, PhD", team: "Ghent University", img: "/images/team/aleksandra-pizurica.jpeg", link: "https://ai.ugent.be/people/AleksandraPizurica.en.html" },
+  { name: "Danilo Babin, PhD", team: "Ghent University", img: "/images/team/danilo-babin.jpg", link: "https://research.ugent.be/web/person/danilo-babin-0/en" },
+];
+
+const kbcTeam = [
+  { name: "Prof. Dario Mužević, PhD, Dr. med.", team: "KBC Osijek", img: "/images/team/dario-muzevic.jpg", link: "https://hr.linkedin.com/in/dario-mu%C5%BEevi%C4%87-md-phd-5005a7357" },
+  { name: "Maja Košuta Petrović, Dr. med.", team: "KBC Osijek", img: "/images/team/default.png" },
+  { name: "Vjekoslav Kopačin, PhD, Dr. med.", team: "KBC Osijek", img: "/images/team/vjekoslav-kopacin.jpg", link: "https://poliklinika-svetiante.hr/doctors/vjekoslav-kopacin-dr-med-2" },
+];
+
+---
+
+<BaseLayout title="Team - MediTrain" description="Meet the MediTrain research team">
+  <div class="min-h-screen py-16">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+        <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">Our Team</h1>
+        <p class="text-xl text-white/90 max-w-3xl mx-auto">
+          A multidisciplinary collaboration combining expertise in medical imaging, VR, and clinical medicine.
+        </p>
+        <div class="w-24 h-1 bg-yellow mx-auto mt-6"></div>
+      </div>
+
+      <div class="flex flex-col items-center mb-16">
+        <div class="group relative w-64 h-80 rounded-lg overflow-hidden shadow-2xl hover:shadow-yellow/50 transition-all duration-300 ring-4 ring-yellow/20">
+          <img src={projectLeader.img} alt={projectLeader.name} class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+          
+          <div class="absolute inset-0 bg-dark/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+            <h3 class="text-xl font-bold text-white">{projectLeader.name}</h3>
+            <p class="text-yellow font-bold mt-2 uppercase text-sm tracking-wider">Project Leader</p>
+            <p class="text-yellow text-xs font-semibold mt-2 uppercase mb-4">{projectLeader.team}</p>
+            
+            <a href={projectLeader.link} target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-yellow hover:text-dark text-white text-sm font-semibold rounded-full transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                Website
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-20">
+        <div class="flex items-center gap-4 mb-8 justify-center opacity-80">
+          <div class="h-px bg-white/30 w-12"></div>
+          <h2 class="text-2xl font-bold text-white uppercase tracking-wider">FERIT Osijek</h2>
+          <div class="h-px bg-white/30 w-12"></div>
+        </div>
+        
+        <div class="flex flex-wrap justify-center gap-6">
+          {feritTeam.map((member) => (
+            <div class="group relative w-56 h-72 bg-white/5 rounded-lg overflow-hidden shadow-lg transition-all duration-300">
+              <img src={member.img} alt={member.name} class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              
+              <div class="absolute inset-0 bg-dark/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+                <h3 class="text-md font-bold text-white">{member.name}</h3>
+                <p class="text-yellow text-xs font-semibold mt-2 uppercase mb-4">{member.team}</p>
+                
+                <a href={member.link} target="_blank" class="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 hover:bg-yellow hover:text-dark text-white text-xs font-semibold rounded-full transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                    Website
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        
+        <div>
+          <div class="flex items-center gap-4 mb-8 justify-center opacity-80">
+            <h2 class="text-2xl font-bold text-white uppercase tracking-wider">Ghent University</h2>
+          </div>
+          <div class="flex flex-wrap justify-center gap-6">
+            {ghentTeam.map((member) => (
+              <div class="group relative w-56 h-72 bg-white/5 rounded-lg overflow-hidden shadow-lg transition-all duration-300">
+                <img src={member.img} alt={member.name} class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                
+                <div class="absolute inset-0 bg-dark/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+                  <h3 class="text-md font-bold text-white">{member.name}</h3>
+                  <p class="text-yellow text-xs font-semibold mt-2 uppercase mb-4">{member.team}</p>
+                  
+                  <a href={member.link} target="_blank" class="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 hover:bg-yellow hover:text-dark text-white text-xs font-semibold rounded-full transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                    Website
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div>
+           <div class="flex items-center gap-4 mb-8 justify-center opacity-80">
+            <h2 class="text-2xl font-bold text-white uppercase tracking-wider">KBC Osijek</h2>
+          </div>
+          <div class="flex flex-wrap justify-center gap-6">
+            {kbcTeam.map((member) => (
+              <div class="group relative w-56 h-72 bg-white/5 rounded-lg overflow-hidden shadow-lg transition-all duration-300">
+                <img src={member.img} alt={member.name} class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                
+                <div class="absolute inset-0 bg-dark/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+                  <h3 class="text-md font-bold text-white">{member.name}</h3>
+                  <p class="text-yellow text-xs font-semibold mt-2 uppercase mb-4">{member.team}</p>
+                  
+                    {member.link && (
+                        <a href={member.link} target="_blank" class="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 hover:bg-yellow hover:text-dark text-white text-xs font-semibold rounded-full transition-colors duration-300">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                      Website
+                    </a>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</BaseLayout>

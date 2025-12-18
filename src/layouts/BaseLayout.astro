@@ -1,0 +1,169 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "MediTrain - Medical Education Through Virtual Reality",
+  description = "Developing innovative methods for medical education and surgical planning using AI and XR technology."
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/logos/logo-white.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles/global.css" />
+  </head>
+  <body class="bg-gradient-to-br from-primary to-accent min-h-screen relative">
+    <!-- Background Pattern -->
+    <div class="fixed inset-0 -z-10">
+      <div class="geometric-pattern text-white">
+        <!-- Plus signs - visible on all screens -->
+        <div class="pattern-plus" style="top: 10%; left: 8%;"></div>
+        <div class="pattern-plus" style="top: 30%; left: 65%;"></div>
+        <div class="pattern-plus" style="top: 50%; left: 15%;"></div>
+        <div class="pattern-plus" style="top: 70%; left: 80%;"></div>
+        <div class="pattern-plus" style="top: 85%; left: 40%;"></div>
+
+        <!-- Plus signs - only on medium+ screens -->
+        <div class="pattern-plus hidden md:block" style="top: 20%; left: 35%;"></div>
+        <div class="pattern-plus hidden md:block" style="top: 45%; left: 88%;"></div>
+        <div class="pattern-plus hidden md:block" style="top: 60%; left: 50%;"></div>
+        <div class="pattern-plus hidden lg:block" style="top: 15%; left: 92%;"></div>
+        <div class="pattern-plus hidden lg:block" style="top: 75%; left: 5%;"></div>
+        <div class="pattern-plus hidden lg:block" style="top: 55%; left: 72%;"></div>
+
+        <!-- Hexagons - visible on all screens -->
+        <svg class="pattern-hexagon" style="top: 20%; left: 45%;" viewBox="0 0 100 115" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M50 0 L93.3 25 L93.3 75 L50 100 L6.7 75 L6.7 25 Z"/>
+        </svg>
+        <svg class="pattern-hexagon" style="top: 55%; left: 85%;" viewBox="0 0 100 115" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M50 0 L93.3 25 L93.3 75 L50 100 L6.7 75 L6.7 25 Z"/>
+        </svg>
+        <svg class="pattern-hexagon" style="top: 75%; left: 25%;" viewBox="0 0 100 115" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M50 0 L93.3 25 L93.3 75 L50 100 L6.7 75 L6.7 25 Z"/>
+        </svg>
+
+        <!-- Hexagons - only on medium+ screens -->
+        <svg class="pattern-hexagon hidden md:block" style="top: 40%; left: 10%;" viewBox="0 0 100 115" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M50 0 L93.3 25 L93.3 75 L50 100 L6.7 75 L6.7 25 Z"/>
+        </svg>
+        <svg class="pattern-hexagon hidden md:block" style="top: 88%; left: 60%;" viewBox="0 0 100 115" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M50 0 L93.3 25 L93.3 75 L50 100 L6.7 75 L6.7 25 Z"/>
+        </svg>
+        <svg class="pattern-hexagon hidden lg:block" style="top: 10%; left: 75%;" viewBox="0 0 100 115" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M50 0 L93.3 25 L93.3 75 L50 100 L6.7 75 L6.7 25 Z"/>
+        </svg>
+      </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-dark/95 backdrop-blur-sm border-b border-white/10 z-50">
+      <div class="max-w-7xl mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <a href="/" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+            <img src="/logos/logo-white.png" alt="MediTrain Logo" class="h-10 sm:h-12 w-auto" />
+            <span class="text-xl sm:text-2xl font-bold text-white">MediTrain</span>
+          </a>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex items-center gap-6 lg:gap-8">
+            <a href="/" class="text-white hover:text-yellow transition-colors font-semibold">Home</a>
+            <a href="/about" class="text-white hover:text-yellow transition-colors font-semibold">About</a>
+            <a href="/team" class="text-white hover:text-yellow transition-colors font-semibold">Team</a>
+            <a href="/papers" class="text-white hover:text-yellow transition-colors font-semibold">Papers</a>
+            <a href="/dissemination" class="text-white hover:text-yellow transition-colors font-semibold">Dissemination</a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-button" class="md:hidden text-white p-2" aria-label="Toggle menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-white/10 pt-4">
+          <div class="flex flex-col gap-4">
+            <a href="/" class="text-white hover:text-yellow transition-colors font-semibold">Home</a>
+            <a href="/about" class="text-white hover:text-yellow transition-colors font-semibold">About</a>
+            <a href="/team" class="text-white hover:text-yellow transition-colors font-semibold">Team</a>
+            <a href="/papers" class="text-white hover:text-yellow transition-colors font-semibold">Papers</a>
+            <a href="/dissemination" class="text-white hover:text-yellow transition-colors font-semibold">Dissemination</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <script>
+      // Mobile menu toggle
+      const menuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuIcon = document.getElementById('menu-icon');
+      const closeIcon = document.getElementById('close-icon');
+
+      menuButton?.addEventListener('click', () => {
+        mobileMenu?.classList.toggle('hidden');
+        menuIcon?.classList.toggle('hidden');
+        closeIcon?.classList.toggle('hidden');
+      });
+
+      // Close mobile menu when clicking a link
+      const mobileLinks = mobileMenu?.querySelectorAll('a');
+      mobileLinks?.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu?.classList.add('hidden');
+          menuIcon?.classList.remove('hidden');
+          closeIcon?.classList.add('hidden');
+        });
+      });
+    </script>
+
+    <!-- Main Content -->
+    <main class="pt-24">
+      <slot />
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark/50 backdrop-blur-sm text-white py-12 mt-24">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4">MediTrain</h3>
+            <p class="text-white/80">Medical Education and Planning Through Virtual Reality</p>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-3">Quick Links</h4>
+            <ul class="space-y-2 text-white/80">
+              <li><a href="/" class="hover:text-yellow transition-colors">Home</a></li>
+              <li><a href="/about" class="hover:text-yellow transition-colors">About</a></li>
+              <li><a href="/team" class="hover:text-yellow transition-colors">Team</a></li>
+              <li><a href="/papers" class="hover:text-yellow transition-colors">Papers</a></li>
+              <li><a href="/dissemination" class="hover:text-yellow transition-colors">Dissemination</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-3">Support</h4>
+            <p class="text-white/80 text-sm">
+              This work was supported by the Croatian Science Foundation under the project number <a href="https://hrzz.hr/financiranje/baza-projekata/?ID=16848#baza" target="_blank" class="text-yellow hover:underline">IP-2024-05-9492</a>.
+            </p>
+          </div>
+        </div>
+        <div class="border-t border-white/10 mt-8 pt-8 text-center text-white/60 text-sm">
+          <p>&copy; {new Date().getFullYear()} MediTrain. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

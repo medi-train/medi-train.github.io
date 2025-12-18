@@ -1,0 +1,103 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="About - MediTrain" description="Learn about the MEDITRAIN project funded by the Croatian Science Foundation">
+  <div class="min-h-screen py-16">
+    <div class="max-w-5xl mx-auto px-6">
+      <!-- Header -->
+      <div class="text-center mb-16">
+        <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">
+          About MEDITRAIN
+        </h1>
+        <div class="w-24 h-1 bg-yellow mx-auto"></div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="bg-white/95 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-2xl space-y-8">
+        <!-- Introduction -->
+        <div class="prose prose-lg max-w-none">
+          <p class="text-xl text-gray-700 leading-relaxed">
+            The Faculty of Electrical Engineering, Computer Science and Information Technology (FERIT), Osijek, Croatia implements the research project funded by the Croatian Science Foundation, titled <span class="font-bold text-primary">Medical Education and Planning through Extended Reality (MEDITRAIN)</span> under the project number <a href="https://hrzz.hr/financiranje/baza-projekata/?ID=16848#baza" target="_blank" class="text-primary hover:underline font-semibold">IP-2024-05-9492</a>.
+          </p>
+        </div>
+
+        <!-- Project Overview -->
+        <div>
+          <h2 class="text-3xl font-bold text-dark mb-6">Project Overview</h2>
+          <div class="space-y-4 text-gray-700 leading-relaxed">
+            <p class="text-lg">
+              The MEDITRAIN project, led by <span class="font-semibold">Prof. Irena Galić, Ph.D.</span>, focuses on the development of novel methods and systems aimed at enhancing medical education and surgical planning for specific medical conditions and procedures. The goal is to create innovative approaches for simulation and analysis of medical images using machine learning algorithms to:
+            </p>
+
+            <div class="bg-primary/10 rounded-2xl p-6 space-y-4 my-6">
+              <div class="flex gap-4">
+                <div class="flex-shrink-0">
+                  <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold">1</div>
+                </div>
+                <p class="text-gray-700">
+                  <span class="font-semibold">Improve clinicians' understanding of placenta accreta</span> and the importance of its detection during pregnancy, with the aim of reducing the rate of missed diagnoses during prenatal ultrasound examinations.
+                </p>
+              </div>
+
+              <div class="flex gap-4">
+                <div class="flex-shrink-0">
+                  <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold">2</div>
+                </div>
+                <p class="text-gray-700">
+                  <span class="font-semibold">Enhance the feasibility and quality of cerebrovascular interventions</span> through the development of detailed and realistic VR/XR simulations of specific neurosurgical procedures.
+                </p>
+              </div>
+            </div>
+
+            <p class="text-lg">
+              For the purpose of ultrasound examination simulations, the project will develop techniques for synthesizing realistic ultrasound images from MRI data by combining traditional and modern methods. In simulating cerebrovascular surgical procedures, the project plans to develop a method based on generative artificial intelligence that will create new, realistic, and complex cases depending on predefined medical parameters.
+            </p>
+
+            <p class="text-lg">
+              The project will result in a set of <span class="font-semibold">open-source software libraries</span> containing all the methods developed throughout the project. The synthetic medical image generation techniques will enable the creation of diverse educational scenarios, while the VR/XR simulations will provide medical professionals with the opportunity to improve their skills in a safe environment.
+            </p>
+          </div>
+        </div>
+
+        <!-- Image Placeholder -->
+        <div class="relative mt-8">
+          <div class="absolute inset-0 flex items-center justify-center -z-10">
+            <div class="w-full h-full bg-yellow/20 rounded-3xl blur-2xl"></div>
+          </div>
+          <img src="/images/meditrain_project.png" alt="MEDITRAIN Project Overview" class="w-full rounded-2xl shadow-xl" />
+        </div>
+
+        <!-- Research Areas -->
+        <div class="grid md:grid-cols-2 gap-6 mt-12">
+          <div class="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-6">
+            <div class="flex items-center gap-3 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg"  class="w-10 h-10 stroke-primary" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="#141B34" stroke-width="1.5">
+                <path d="M9.60059 6.11211C9.92247 5.29596 11.0775 5.29596 11.3994 6.11211L12.3103 8.4216C12.8999 9.91665 14.0833 11.1001 15.5784 11.6897L17.8879 12.6006C18.704 12.9225 18.704 14.0775 17.8879 14.3994L15.5784 15.3103C14.0833 15.8999 12.8999 17.0833 12.3103 18.5784L11.3994 20.8879C11.0775 21.704 9.92247 21.704 9.60059 20.8879L8.68974 18.5784C8.1001 17.0833 6.91665 15.8999 5.4216 15.3103L3.11211 14.3994C2.29596 14.0775 2.29596 12.9225 3.11211 12.6006L5.4216 11.6897C6.91665 11.1001 8.1001 9.91665 8.68974 8.4216L9.60059 6.11211Z" />
+                <path d="M18.1627 2.72954C18.2834 2.42349 18.7166 2.42349 18.8373 2.72954L19.1788 3.5956C19.4 4.15624 19.8438 4.60004 20.4044 4.82115L21.2705 5.16272C21.5765 5.28343 21.5765 5.71657 21.2705 5.83728L20.4044 6.17885C19.8438 6.39996 19.4 6.84376 19.1788 7.4044L18.8373 8.27046C18.7166 8.57651 18.2834 8.57651 18.1627 8.27046L17.8212 7.4044C17.6 6.84376 17.1562 6.39996 16.5956 6.17885L15.7295 5.83728C15.4235 5.71657 15.4235 5.28343 15.7295 5.16272L16.5956 4.82115C17.1562 4.60004 17.6 4.15624 17.8212 3.5956L18.1627 2.72954Z" />
+            </svg>
+              <h3 class="text-xl font-bold text-dark">Ultrasound Simulation</h3>
+            </div>
+            <p class="text-gray-700">
+              Synthesizing realistic ultrasound images from MRI data using traditional and modern machine learning methods for placenta accreta detection training.
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-br from-accent/10 to-accent/5 rounded-2xl p-6">
+            <div class="flex items-center gap-3 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 stroke-accent" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="#141B34" stroke-width="1.5" stroke-linecap="round">
+                        <path d="M17 9H7C5.13077 9 4.19615 9 3.5 9.44212C3.04394 9.73175 2.66523 10.1483 2.40192 10.65C2 11.4158 2 12.4438 2 14.5C2 16.5562 2 17.5842 2.40192 18.35C2.66523 18.8517 3.04394 19.2682 3.5 19.5579C4.19615 20 5.13077 20 7 20C7.61332 20 7.91998 20 8.21032 19.9529C8.98496 19.8272 9.70902 19.4541 10.2927 18.88C10.5115 18.6648 10.7078 18.4057 11.1005 17.8874L11.4346 17.4463C11.6334 17.1839 11.7328 17.0527 11.8543 17.0014C11.9552 16.9587 12.0659 16.9532 12.1699 16.9856C12.2951 17.0246 12.4049 17.1454 12.6245 17.3869L13.5858 18.4444C13.8243 18.7067 13.9435 18.8379 14.0676 18.9537C14.7056 19.5498 15.4976 19.9106 16.3319 19.9855C16.4941 20 16.6627 20 17 20C18.8692 20 19.8038 20 20.5 19.5579C20.9561 19.2682 21.3348 18.8517 21.5981 18.35C22 17.5842 22 16.5562 22 14.5C22 12.4438 22 11.4158 21.5981 10.65C21.3348 10.1483 20.9561 9.73175 20.5 9.44212C19.8038 9 18.8692 9 17 9Z" />
+                        <path d="M16 13H18" />
+                        <path d="M22 15V12.4522C22 11.4723 22 10.9823 21.9227 10.5086C21.8844 10.2743 21.8322 10.0438 21.7664 9.81888C21.6333 9.36411 21.427 8.94392 21.0145 8.1036C20.1876 6.41927 19.7742 5.5771 19.1715 5.01138C18.8756 4.73365 18.5493 4.50788 18.2022 4.34065C17.4952 4 16.6916 4 15.0845 4H8.91548C7.30836 4 6.5048 4 5.79779 4.34065C5.45069 4.50788 5.12444 4.73365 4.82853 5.01138C4.22579 5.5771 3.81236 6.41927 2.9855 8.1036C2.57298 8.94394 2.36671 9.3641 2.23364 9.81888C2.16781 10.0438 2.11557 10.2743 2.07733 10.5086C2 10.9823 2 11.4723 2 12.4522V15" />
+                    </svg>
+              <h3 class="text-xl font-bold text-dark">VR/XR Neurosurgery</h3>
+            </div>
+            <p class="text-gray-700">
+              Creating detailed VR/XR simulations of cerebrovascular procedures using generative AI to generate realistic and complex surgical scenarios.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
