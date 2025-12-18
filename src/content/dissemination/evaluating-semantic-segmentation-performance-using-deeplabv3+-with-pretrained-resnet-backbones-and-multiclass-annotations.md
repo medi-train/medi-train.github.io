@@ -1,23 +1,39 @@
 ---
-title: "Machine Learning in Medical Image Analysis"
-description: "A review of how AI-driven Extended Reality (XR) is revolutionizing medical training and surgery, featuring advanced simulation techniques and case studies in complex diagnostics."
-eventDate: 2025-23-04
-eventType: "keynote"
+title: "Evaluating Semantic Segmentation Performance Using DeepLabv3+ with Pretrained ResNet Backbones and Multi-Class Annotations"
+description: "Our student presented a paper on Semantic Segmentation in Histopathology at the OTO 2025 conference. The research validated a DeepLabv3+ pipeline that uses weakly supervised learning to generate accurate predictions (0.84 Dice score) from limited data, offering a scalable solution for medical image analysis."
+eventDate: 2025-12-12
+eventType: "conference"
 presenters:
+  - "Matej Spajić"
+  - "Marija Habijan"
+  - "Danijel Marinčić"
   - "Irena Galić"
-location: "Mostar, Bosnia and Herzegovina"
+location: "Osijek, Croatia"
 organization: "Mostart 2025"
-slidesUrl: "/slides/mostart2025_presentation.pdf"
-image: "/images/dissemination/mostart2025.png"
+slidesUrl: "/slides/mhist2025-presentation.ppt"
+image: "/images/dissemination/oto2025.png"
 tags:
-  - "Machine Learning"
-  - "Medical Image Analysis"
-  - "Medicine"
-  - "Computer Vision"
-  - "Image Segmentation"
-  - "Computer Vision"
+    - "Semantic Segmentation"
+    - "Deep Learning"
+    - "Histopathology"
+    - "Weakly Supervised Learning"
+    - "Medical Image Analysis"
+    - "Computer Vision"
+    - "Artificial Intelligence"
 ---
 
 ## Abstract
 
-The integration of extended reality (XR) technologies, virtual, augmented, and mixed reality with artificial intelligence (AI) is transforming medical education, diagnostics, and surgical planning. This mini review explores how established AI methods such as convolutional neural networks (CNNs), recurrent networks (RNNs), generative adversarial networks (GANs), and reinforcement learning (RL) are being used to enhance XR systems for anatomical segmentation, realistic simulation, and autonomous interaction. It also examines emerging approaches, including diffusion models (DMs), vision transformers (ViTs), and multi-modal learning (MML), which enable high-fidelity synthetic data generation, contextual scene understanding, and integration of heterogeneous inputs such as imaging, text, and sensor data. Through use cases in placenta accreta diagnosis and neurovascular intervention planning, we demonstrate how AI-enhanced XR systems can deliver immersive, intelligent, and personalized experiences for clinicians and trainees. We further outline technical challenges, including real-time performance, data variability, and interpretability, and discuss strategies to ensure safe, equitable, and effective adoption of AI-driven XR in healthcare.
+Semantic segmentation is a critical task in computer vision, enabling dense classification of 2
+image regions. This work investigates the effectiveness of the DeepLabv3+ architecture for 3
+binary semantic segmentation using annotated image data. A pretrained ResNet-101 back- 4
+bone is employed to extract deep features, while Atrous Spatial Pyramid Pooling (ASPP) 5
+and a decoder module refine the segmentation outputs. The dataset provides per-image 6
+annotations indicating class presence, which are leveraged to approximate segmentation 7
+masks for training purposes. Various data augmentation techniques and training strategies 8
+were applied to support effective learning and reduce overfitting. Experimental results on 9
+the MHIST dataset show that the proposed pipeline achieves strong performance despite 10
+the lack of pixel-level annotations, with a mean Intersection-over-Union (mIoU) of 0.76 and 11
+a mean Dice coefficient of 0.84. These confirm the potential of weakly supervised segmen- 12
+tation using class-aware CAMs and deep pretrained encoders for structured pixel-level 13
+prediction tasks in medical imaging.

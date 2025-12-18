@@ -2,20 +2,27 @@
 title: "Efficient Self-Supervised Vision Transformers for Histopathology Image Retrieval"
 description: "We presented our paper at EUSIPCO 2025. The study demonstrates that self-supervised Vision Transformers provide a faster, more accurate alternative to CNNs for retrieving medical images. The dissemination emphasized the system's robustness across multiple tissue datasets and its efficiency for real-time clinical applications."
 eventDate: 2025-08-09
-eventType: "conference"
+eventType: "poster"
 presenters:
   - "Marija Habijan"
+  - "Petar Nakić"
+  - "Irena Galić"
+  - "Danijel Marinčić"
+  - "Josip Samardžić"
+  - "Aleksandra Pižurica"
 location: "Palermo, Italy"
 organization: "EUSIPCO 2025"
-slidesUrl: "/slides/mostart2025_presentation.pdf"
-image: "/images/dissemination/mostart2025.png"
+slidesUrl: "/slides/EUSIPCO_2025___poster.pdf"
+image: "/images/dissemination/eusipco2025.png"
 tags:
-  - "Machine Learning"
-  - "Medical Image Analysis"
-  - "Medicine"
-  - "Computer Vision"
-  - "Image Segmentation"
-  - "Computer Vision"
+    - "Deep Learning"
+    - "Medical Image Analysis"
+    - "Histopathology"
+    - "Vision Transformers"
+    - "Self-Supervised Learning"
+    - "Digital Pathology"
+    - "Image Retrieval"
+    - "Signal Processing"
 ---
 
 ## Abstract

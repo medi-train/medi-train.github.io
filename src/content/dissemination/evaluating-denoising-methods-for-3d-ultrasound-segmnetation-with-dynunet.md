@@ -1,21 +1,24 @@
 ---
-title: "Enhancing Diagnostic and Surgical Planning: The Role of AI and XR Technologies in Modern Medicine"
-description: "Hands-on workshop covering practical applications of machine learning methods for medical image segmentation, classification, and analysis. Participants learned to implement deep learning models for automated diagnostic support."
-eventDate: 2025-05-15
-eventType: "poster"
+title: "Evaluating Denoising Methods for 3D Ultrasound Uterus Segmentation with DynUNet"
+description: "We disseminated our paper on 3D Uterus Segmentation at the ELMAR 2025 conference. The research highlights the effectiveness of DnCNN denoising combined with DynUNet for processing noisy transvaginal ultrasound volumes, demonstrating significant accuracy gains in automated anatomical analysis."
+eventDate: 2025-09-16
+eventType: "conference"
 presenters:
-  - "Patrik Kokić"
-  - "Irena Galić"
-  - "Marija Habijan"
-location: "Osijek, Croatia"
-organization: "1st Student Interdisciplinary Symposium – HumanUpgrade"
-slidesUrl: "/slides/poster.pdf"
-image: "/images/dissemination/poster1.png"
+    - "Marija Habijan"
+    - "Irena Galić"
+    - "Juraj Perić"
+location: "Zadar, Croatia"
+organization: "ELMAR 2025"
+slidesUrl: "/slides/elmar2025 - prezentacija.pdf"
+image: "/images/dissemination/elmar2025.png"
 tags:
-  - "Medical Education"
-  - "Virtual Reallity"
-  - "Personalized Medicine"
-  - "Medical Planning and Education"
+    - "Medical Image Analysis"
+    - "Deep Learning"
+    - "Ultrasound Imaging"
+    - "3D Segmentation"
+    - "Image Denoising"
+    - "Reproductive Health"
+    - "Signal Processing"
 ---
 
 ## Abstract
