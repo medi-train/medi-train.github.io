@@ -30,7 +30,7 @@ const eventTypeLabels = {
   description={item.data.description}
 >
   <article class="max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-16">
-    <!-- Breadcrumb Navigation -->
+    
     <nav class="mb-6 sm:mb-8 text-white/70">
       <ol class="flex items-center gap-2 text-xs sm:text-sm overflow-x-auto">
         <li class="whitespace-nowrap">
@@ -47,7 +47,7 @@ const eventTypeLabels = {
       </ol>
     </nav>
 
-    <!-- Event Header -->
+    
     <header class="mb-8 sm:mb-12">
       <div class="flex items-center gap-3 mb-3 sm:mb-4">
         <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-yellow/20 text-yellow text-xs sm:text-sm font-semibold rounded-full border border-yellow/30">
@@ -100,7 +100,7 @@ const eventTypeLabels = {
         <span class="break-words">{item.data.presenters.join(', ')}</span>
       </div>
 
-      <!-- Download Links -->
+      
       {(item.data.posterUrl || item.data.slidesUrl || item.data.videoUrl) && (
         <div class="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
           {item.data.posterUrl && (
@@ -149,7 +149,7 @@ const eventTypeLabels = {
       )}
     </header>
 
-    <!-- Event Image -->
+    
     {item.data.image && (
       <div class="mb-8 sm:mb-12 rounded-xl sm:rounded-2xl overflow-hidden border border-white/10">
         <img
@@ -160,14 +160,14 @@ const eventTypeLabels = {
       </div>
     )}
 
-    <!-- Event Content -->
+    
     <div class="prose prose-invert prose-sm sm:prose-base md:prose-lg max-w-none mb-8 sm:mb-12">
       <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8">
         <Content />
       </div>
     </div>
 
-    <!-- Tags -->
+    
     {item.data.tags && item.data.tags.length > 0 && (
       <section class="mb-8 sm:mb-12">
         <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6">Topics</h2>
@@ -181,7 +181,7 @@ const eventTypeLabels = {
       </section>
     )}
 
-    <!-- Back to Dissemination -->
+    
     <div class="pt-6 sm:pt-8 border-t border-white/10">
       <a
         href="/dissemination"
