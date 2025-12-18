@@ -1,7 +1,7 @@
 ---
 title: "Machine Learning in Medical Image Analysis"
 description: "A review of how AI-driven Extended Reality (XR) is revolutionizing medical training and surgery, featuring advanced simulation techniques and case studies in complex diagnostics."
-eventDate: 2025-04-23
+eventDate: 2025-23-04
 eventType: "keynote"
 presenters:
   - "Irena Galić"

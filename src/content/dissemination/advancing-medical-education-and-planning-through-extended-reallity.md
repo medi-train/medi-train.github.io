@@ -1,23 +1,22 @@
 ---
-title: "Enhancing Diagnostic and Surgical Planning: The Role of AI and XR Technologies in Modern Medicine"
-description: "Hands-on workshop covering practical applications of machine learning methods for medical image segmentation, classification, and analysis. Participants learned to implement deep learning models for automated diagnostic support."
-eventDate: 2025-05-15
-eventType: "poster"
+title: "Advancing Medical Education and Planning Through Extended Reality: A Mini Review of XR Applications in Medicine"
+description: "We presented our findings at MoStart 2025, demonstrating how the integration of Generative AI and Extended Reality is revolutionizing medical diagnostics. The session engaged the international community on the shift from standard simulations to intelligent, autonomous medical environments."
+eventDate: 2025-04-23
+eventType: "conference"
 presenters:
-  - "Patrik Kokić"
-  - "Irena Galić"
   - "Marija Habijan"
-location: "Osijek, Croatia"
-organization: "1st Student Interdisciplinary Symposium – HumanUpgrade"
+location: "Mostar, Bosnia and Herzegovina"
+organization: "Mostart 2025"
 slidesUrl: "/slides/poster.pdf"
 image: "/images/dissemination/poster1.png"
 tags:
   - "Medical Education"
-  - "Virtual Reallity"
+  - "Virtual Reality"
+  - "Augmented Reality"
   - "Personalized Medicine"
   - "Medical Planning and Education"
 ---
 
 ## Abstract
 
-Advancements in artificial intelligence (AI) and extended reality (XR) are revolutionizing medical diagnostics and surgical planning. AI allows for automated segmentation of medical images, while XR provides immersive 3D visualization of patient-specific anatomy. Deep learning methods, shown in Figure 1., are effective in segmenting complex anatomical structures from MRI and CT scans, such as placental tissue or neurovascular pathways. These segmentations are used to generate 3D models within XR platforms. XR headsets allow real-time visualization of these models during ultrasound or preoperative sessions, enhancing spatial orientation and precision.
+The integration of extended reality (XR) technologies, virtual, augmented, and mixed reality with artificial intelligence (AI) is transforming medical education, diagnostics, and surgical planning. This mini review explores how established AI methods such as convolutional neural networks (CNNs), recurrent networks (RNNs), generative adversarial networks (GANs), and reinforcement learning (RL) are being used to enhance XR systems for anatomical segmentation, realistic simulation, and autonomous interaction. It also examines emerging approaches, including diffusion models (DMs), vision transformers (ViTs), and multi-modal learning (MML), which enable high-fidelity synthetic data generation, contextual scene understanding, and integration of heterogeneous inputs such as imaging, text, and sensor data. Through use cases in placenta accreta diagnosis and neurovascular intervention planning, we demonstrate how AI-enhanced XR systems can deliver immersive, intelligent, and personalized experiences for clinicians and trainees. We further outline technical challenges, including real-time performance, data variability, and interpretability, and discuss strategies to ensure safe, equitable, and effective adoption of AI-driven XR in healthcare.
