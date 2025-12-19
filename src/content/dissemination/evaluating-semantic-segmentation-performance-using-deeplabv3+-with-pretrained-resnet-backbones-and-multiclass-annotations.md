@@ -24,16 +24,10 @@ tags:
 
 ## Abstract
 
-Semantic segmentation is a critical task in computer vision, enabling dense classification of 2
-image regions. This work investigates the effectiveness of the DeepLabv3+ architecture for 3
-binary semantic segmentation using annotated image data. A pretrained ResNet-101 back- 4
-bone is employed to extract deep features, while Atrous Spatial Pyramid Pooling (ASPP) 5
-and a decoder module refine the segmentation outputs. The dataset provides per-image 6
-annotations indicating class presence, which are leveraged to approximate segmentation 7
-masks for training purposes. Various data augmentation techniques and training strategies 8
-were applied to support effective learning and reduce overfitting. Experimental results on 9
-the MHIST dataset show that the proposed pipeline achieves strong performance despite 10
-the lack of pixel-level annotations, with a mean Intersection-over-Union (mIoU) of 0.76 and 11
-a mean Dice coefficient of 0.84. These confirm the potential of weakly supervised segmen- 12
-tation using class-aware CAMs and deep pretrained encoders for structured pixel-level 13
+Semantic segmentation is a critical task in computer vision, enabling dense classification of image regions. This work investigates the effectiveness of the DeepLabv3+ architecture for
+binary semantic segmentation using annotated image data. A pretrained ResNet-101 back- bone is employed to extract deep features, while Atrous Spatial Pyramid Pooling (ASPP)
+and a decoder module refine the segmentation outputs. The dataset provides per-image annotations indicating class presence, which are leveraged to approximate segmentation
+masks for training purposes. Various data augmentation techniques and training strategies were applied to support effective learning and reduce overfitting. Experimental results on
+the MHIST dataset show that the proposed pipeline achieves strong performance despite  the lack of pixel-level annotations, with a mean Intersection-over-Union (mIoU) of 0.76 and 
+a mean Dice coefficient of 0.84. These confirm the potential of weakly supervised segmen-  tation using class-aware CAMs and deep pretrained encoders for structured pixel-level 
 prediction tasks in medical imaging.
